@@ -1,4 +1,6 @@
 # TCRS README
+Paper: Reformulating Conversational Recommender Systems as Tri-Phase Offline Policy Learning
+
 
 ## Overview
 
