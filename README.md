@@ -33,7 +33,7 @@ Replace `<dataset_name>` with the name of your dataset (e.g., `LAST_FM_STAR`, `Y
 
 ### 1. User Model Training
 
-This initial phase involves training the Preference Estimation User Model (PEUM) that predicts user preferences using offline data. This model serves as the foundation for the subsequent policy learning stage. Execute the training with the following command:
+This initial phase involves training the Conversational User Model (CUM) that predicts user preferences using offline data. This model serves as the foundation for the subsequent policy learning stage. Execute the training with the following command:
 
 ```bash
 python user_model_train.py --data_name <dataset_name> 
@@ -69,7 +69,7 @@ TCRS/
 │   └── user_simulator.py # User Simulation
 │
 ├── user_model/     # User modeling modules
-│   └── preference_model.py  # Preference Estimation User Model (PEUM)
+│   └── preference_model.py  # Conversational User Model (CUM)
 │   
 │
 ├── rl_ppo/              # Reinforcement learning modules
@@ -85,7 +85,7 @@ TCRS/
 ├── config.py            # Configuration file
 ├── utils.py             # Utility functions
 ├── retrieval_graph.py   # Graph retrieval module
-├── user_model_train.py  # PEUM training script
+├── user_model_train.py  # CUM training script
 └── RL_train.py          # RL training script
 ```
 
